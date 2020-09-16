@@ -35,12 +35,24 @@
     <Compile Include="jukebox\settings.py" />
     <Compile Include="jukebox\urls.py" />
     <Compile Include="jukebox\wsgi.py" />
+    <Compile Include="OrthodoxJukeboxApp\admin.py" />
+    <Compile Include="OrthodoxJukeboxApp\apps.py" />
+    <Compile Include="OrthodoxJukeboxApp\migrations\__init__.py" />
+    <Compile Include="OrthodoxJukeboxApp\models.py" />
+    <Compile Include="OrthodoxJukeboxApp\tests.py" />
+    <Compile Include="OrthodoxJukeboxApp\views.py" />
+    <Compile Include="OrthodoxJukeboxApp\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OrthodoxJukeboxApp\templates\OrthodoxJukeboxApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="jukebox\" />
+    <Folder Include="OrthodoxJukeboxApp\" />
+    <Folder Include="OrthodoxJukeboxApp\migrations\" />
+    <Folder Include="OrthodoxJukeboxApp\templates\" />
+    <Folder Include="OrthodoxJukeboxApp\templates\OrthodoxJukeboxApp\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
