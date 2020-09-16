@@ -16,11 +16,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+from django.conf.urls import include, url
+import OrthodoxJukeboxApp.views
 # Uncomment next two lines to enable admin:
 #from django.contrib import admin
 #from django.urls import path
 
 urlpatterns = [
+    url(r'^$', OrthodoxJukeboxApp.views.index, name='index'),
+    url(r'^home$', OrthodoxJukeboxApp.views.index, name='home'),
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
 ]

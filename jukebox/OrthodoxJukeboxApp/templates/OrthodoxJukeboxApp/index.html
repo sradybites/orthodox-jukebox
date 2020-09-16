@@ -1,9 +1,22 @@
 <html>
-<head><title></title></head>
+    <head>
+        <title>{{ title }}</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    </head>
+    <body>
 
-<body>
+        <span class="message">{{ message }}</span>{{ content }}
 
-{{ content }}
+        <div id="first_button_container"></div>
 
-</body>
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Load our React component. -->
+        <script src="{% static 'first_button.js' %}"></script>
+
+    </body>
 </html>

@@ -44,6 +44,8 @@
     <Compile Include="OrthodoxJukeboxApp\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OrthodoxJukeboxApp\static\first_button.js" />
+    <Content Include="OrthodoxJukeboxApp\static\site.css" />
     <Content Include="OrthodoxJukeboxApp\templates\OrthodoxJukeboxApp\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
@@ -53,6 +55,7 @@
     <Folder Include="OrthodoxJukeboxApp\migrations\" />
     <Folder Include="OrthodoxJukeboxApp\templates\" />
     <Folder Include="OrthodoxJukeboxApp\templates\OrthodoxJukeboxApp\" />
+    <Folder Include="OrthodoxJukeboxApp\static\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
